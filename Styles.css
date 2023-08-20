@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Raleway:wght@100;400&display=swap');
+
+@font-face {
+    font-family: "BooterZeroZero";
+    src: url("Fonts/booter-zero-zero/BooterZeroZero.ttf") format(ttf),
+         url("Fonts/booter-zero-zero/BooterZeroOne.ttf") format(ttf);
+    font-weight: normal;
+    font-style: normal;    
+}
+
+*{ /* simboliza everything selector*/
+    box-sizing: border-box; /* limita o tamanho dos conteudos a nao exceder o que desejamos width = 20px inclui padding */
+    font-family: Raleway;
+    color: #777;
+}
+
+html , body{ /* selecionamos os elementos html e o body e retiramos as barras brancas envolventes que sao default*/
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{ /* selecionei a classe "nav" do elemento "ul" e retirei a branca branca default que lhe é conferida */
+    margin: 0;
+}
+
+.nav li{
+    display: inline; /* dentro da classe nav do elemento "li" o conteudo vai estar Inline e nao em linhas difs no default*/
+}
+
+.nav a{
+    display: inline-block; /* como sao inline o padding so funcionava pros lados mas agr funciona para cima e baixo tb */
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.main-header{ /* selecionar a classe que vou modificar */
+    background-color: rgba(0, 0, 0, .2); /* adicionei um filtro preto com transparencia de 20% */
+    background-image: url(ImagesWebsite/header_background.jpg); /* adicionar a foto */
+    background-blend-mode: multiply; /* como temos tanto um filtro e uma imagem temos de acionar este modo */
+    background-size: cover; /* obriga a imagem a esticar ate atingir uma das bordas do website */
+    padding-bottom: 1px;
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "BooterZeroZero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large{
+    font-size: 8em;
+}
+
+.content-section{
+    margin: 1em;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}   
+
+.section-header{
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image{
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer{
+    background-color: whitesmoke;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+
+.band-name-footer{
+    text-align: center;
+    margin: 1%;
+    font-size: 2em;
+    font-family: "BooterZeroZero";
+    font-weight: normal;
+    color: black;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;    
+}
+
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #123123;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color: #2d9cdb;
+    font-size: 4em;  
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;   
+}
+
+.tour-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+
+.tour-row-last{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date{
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city{
+    width: 24%;
+}
+
+.tour-arena{
+    width:42%;
+}
+
+.tour.btn{
+    max-width: 19%;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #2d9cdb;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #2d9bdb4b;
+}
+
