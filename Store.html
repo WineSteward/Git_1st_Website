@@ -1,127 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Drakiou | Store</title>
-        <meta name="descrition" content="This is the descrition">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="Store.html">STORE</a></li>
-                    <li><a href="About.html">ABOUT</a></li>
-                </ul>
-            </nav>
-            <hr>
-            <h1>Drake</h1>
-        </header>
-       <section> 
-            <h2>Music</h2>
-            <div>
-                <div>
-                    <strong>Album 1</strong>
-                </div>
-                <img src="ImagesWebsite/1st_album.png">
-                <div>
-                    ><span>12.99€</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>Album 2</strong>
-                </div>
-                <img src="ImagesWebsite/2nd_album.jpeg">
-                <div>
-                    ><span>12.99€</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>REMASTERED Album 1</strong>
-                </div>
-                <img src="ImagesWebsite/1st_albumR.png">
-                <div>
-                    ><span>99.99€</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>REMASTERED Album 2</strong>
-                </div>
-                <img src="ImagesWebsite/2nd_albumR.jpg">
-                <div>
-                    <span>99.99€</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-       </section>
-       <section> 
-            <h2>Merch</h2>
-            <div>
-                <div>
-                    <strong>Full line-up of newest merch</strong>
-                </div>
-                <img src="ImagesWebsite/FullCloset.jpg">
-                <div>
-                    <span> 499.99€</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>Caneca para a cervejola</strong>
-                </div>
-                <img src="ImagesWebsite/Caneca.jpg">
-                <div>
-                    <span>10.99€</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-       </section>
-       <section> 
-            <h2>Cart</h2>
-            <div>
-                <strong>ITEM</strong>
-                &lt;&gt;
-                <strong>PRICE</strong>
-                &lt;&gt;
-                <strong>QUANTITY</strong>
-            </div>
-            <div>
-                <img src="ImagesWebsite/FullCloset.jpg" width="50" height="50">
-                <span>Full line-up of newest merch</span>
-                &lt;&gt;
-                <span>499.99€</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                &lt;&gt;
-                <button role="button">REMOVE</button>
-            </div>
-            <div>
-                <img src="ImagesWebsite/1st_albumR.png" width="50" height="50">
-                <span>Album 1 REMASTERED</span>
-                &lt;&gt;
-                <span>99.99€</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                &lt;&gt;
-                <button role="button">REMOVE</button>
-            </div>
-            <hr>
-            <div>
-                <strong>TOTAL</strong>
-                <span>599.98€</span>
-            </div>
-            <div>
-                <button role="button">PURCHASE</button>
-            </div>
-       </section>
 
-       <footer class="main-footer">
+<head>
+    <title>Drakiou | Store</title>
+    <meta name="descrition" content="This is the descrition">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="store.js" async></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Store.html">STORE</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1 class="band-name band-name-large">Drake</h1>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">Music</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="ImagesWebsite/1st_album.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12.99€</span>
+                    <button class="btn btn-primary btn shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src="ImagesWebsite/2nd_album.jpeg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12.99€</span>
+                    <button class="btn btn-primary btn shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">REMASTERED Album 1</span>
+                <img class="shop-item-image" src="ImagesWebsite/1st_albumR.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">99.99€</span>
+                    <button class="btn btn-primary btn shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">REMASTERED Album 2</span>
+                <img class="shop-item-image" src="ImagesWebsite/2nd_albumR.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">99.99€</span>
+                    <button class="btn btn-primary btn shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-header">Merch</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Full line-up</span>
+                <img class="shop-item-image" src="ImagesWebsite/FullCloset.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price"> 499.99€</span>
+                    <button class="btn btn-primary btn shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Caneca</span>
+                <img class="shop-item-image" src="ImagesWebsite/Caneca.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">10.99€</span>
+                    <button class="btn btn-primary btn shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">TOTAL</strong>
+            <span class="cart-total-price">0€</span>
+        </div>
+            <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
+    </section>
+
+    <footer class="main-footer">
         <div class="container main-footer-container">
             <h3 class="band-name-footer">Drake</h3>
             <ul class="nav footer-nav">
@@ -143,5 +116,6 @@
             </ul>
         </div>
     </footer>
-    </body>
+</body>
+
 </html>
